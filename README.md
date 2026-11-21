@@ -58,12 +58,4 @@ Data provided by **Landeshauptstadt München** via [opendata.muenchen.de](https:
 
 ---
 
-## 3. Publish in 5 Minutes
-1. Create a new public repository on GitHub named `munich-bike-mobility`.
-2. Upload `app.py`, `requirements.txt`, `README.md`, `munich_bike_cleaned_2022_2026.csv`, and an `images/` folder containing `01_commuter_vs_leisure.png` and `02_weather_impact.png`.
-3. Go to [share.streamlit.io](https://share.streamlit.io/), sign in with GitHub, select your repository and `app.py`, and click **Deploy**.
-4. Copy your new live URL back into the top of your `README.md`.
 
-<FollowUp label="Want help setting up your GitHub repo or planning Project 2 (Data Science) next?" query="Help me plan Project 2 (Data Science) for my portfolio now that my Munich Urban Mobility project is ready to publish."/>
-
-```
