@@ -5,7 +5,7 @@ Daten der Raddauerzählstellen München - Jahreszahlen
 
 An end-to-end data analysis and interactive dashboard exploring bicycle traffic patterns, weather elasticity, and sensor data quality across Munich's six permanent counting stations.
 
-🔗 **https://raddauerzaehlstellen-muenchen-gfufq3wqxcvv3vpaywtcjt.streamlit.app/** *(Add your link after deploying)*
+🔗 **https://raddauerzaehlstellen-muenchen-gfufq3wqxcvv3vpaywtcjt.streamlit.app/**
 
 ---
 
