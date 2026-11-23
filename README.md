@@ -14,6 +14,10 @@ Urban planners need reliable data to prioritize bike lane expansion, winter main
 1. **Commuter vs. Leisure Corridors:** Which routes serve daily weekday commuters versus weekend recreational riders?
 2. **Weather Elasticity:** How strongly do temperature and precipitation reduce cycling volume?
 3. **Data Reliability:** Where do sensor outages occur, and how can analysts prevent them from skewing city-wide metrics?
+## 🗺️ Interactive Dashboard Features
+* **Clickable Munich Station Map (`Folium` + `OpenStreetMap`):** Plots all six official counting stations using GeoPortal München coordinates. Marker size scales with average daily ridership, and color distinguishes commuter-heavy corridors from balanced/leisure routes.
+* **Click-to-Inspect Station Deep Dive:** Clicking any station on the map updates the detail panel with its street location, weekday-vs-weekend metrics, outage count, and a **Monday–Sunday ridership profile**.
+* **Interactive Analytics Tabs (`Plotly`):** Includes a Year × Month **Seasonality Heatmap**, an interactive **Weather Elasticity** view, and a filterable **Data Quality Audit** table.
 
 ---
 
@@ -37,8 +41,7 @@ Urban planners need reliable data to prioritize bike lane expansion, winter main
 ## 🛠️ Methodology & Tech Stack
 * **Data Ingestion:** Automated retrieval of monthly CSV files (2022–2026) via the Munich Open Data CKAN API (`requests`, `pandas`).
 * **Data Cleaning:** Standardized German headers to `snake_case`, parsed mixed date formats, coerced numeric weather fields, and engineered an `is_outage` flag instead of destructively dropping rows.
-* **Visualization & Deployment:** Publication-ready static charts (`matplotlib`) and a live, filterable web app (`streamlit`).
-
+* **Visualization & Deployment:** Publication-ready static charts (`matplotlib`) and a live interactive geospatial web app (`streamlit`, `folium`, `streamlit-folium`, `plotly`).
 ---
 
 ## 🚀 How to Run Locally
