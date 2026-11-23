@@ -1,11 +1,8 @@
-# Raddauerzaehlstellen-Muenchen
-Daten der Raddauerzählstellen München - Jahreszahlen
-
 # 🚲 Munich Urban Mobility & Cycling Analysis (2022–2026)
 
 An end-to-end data analysis and interactive dashboard exploring bicycle traffic patterns, weather elasticity, and sensor data quality across Munich's six permanent counting stations.
 
-🔗 **https://raddauerzaehlstellen-muenchen-gfufq3wqxcvv3vpaywtcjt.streamlit.app/**
+🔗 **[Live Interactive Dashboard (Streamlit)](https://munich-bike-mobility.streamlit.app/)***
 
 ---
 
@@ -46,7 +43,7 @@ Urban planners need reliable data to prioritize bike lane expansion, winter main
 
 ## 🚀 How to Run Locally
 ```bash
-git clone [https://github.com/your-username/munich-bike-mobility.git](https://github.com/your-username/munich-bike-mobility.git)
+git clone [https://github.com/LeaderTrusty/munich-bike-mobility.git](https://github.com/LeaderTrusty/munich-bike-mobility.git)
 cd munich-bike-mobility
 pip install -r requirements.txt
 streamlit run app.py
