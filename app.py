@@ -6,6 +6,15 @@ import plotly.graph_objects as go
 import folium
 from streamlit_folium import st_folium
 
+
+carto_key = st.secrets["CARTO_API_KEY"]
+    m = folium.Map(
+        location=[48.141, 11.568],
+        zoom_start=12,
+        tiles=f"https://{{s}}.basemaps.cartocdn.com/light_all/{{z}}/{{x}}/{{y}}{{r}}.png?key={carto_key}",
+        attr="&copy; OpenStreetMap contributors &copy; CARTO",
+    )
+
 st.set_page_config(
     page_title="Munich Urban Mobility — Geospatial Dashboard",
     page_icon="🚲",
