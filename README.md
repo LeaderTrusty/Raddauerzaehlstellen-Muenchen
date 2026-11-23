@@ -2,7 +2,7 @@
 
 An end-to-end data analysis and interactive dashboard exploring bicycle traffic patterns, weather elasticity, and sensor data quality across Munich's six permanent counting stations.
 
-🔗 **[Live Interactive Dashboard (Streamlit)](https://munich-bike-mobility.streamlit.app/)***
+🔗 **[Live Interactive Dashboard (Streamlit)](https://munich-bike-mobility.streamlit.app/)**
 
 ---
 
