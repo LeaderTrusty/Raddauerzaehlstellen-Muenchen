@@ -39,6 +39,25 @@ Urban planners need reliable data to prioritize bike lane expansion, winter main
 * **Data Ingestion:** Automated retrieval of monthly CSV files (2022–2026) via the Munich Open Data CKAN API (`requests`, `pandas`).
 * **Data Cleaning:** Standardized German headers to `snake_case`, parsed mixed date formats, coerced numeric weather fields, and engineered an `is_outage` flag instead of destructively dropping rows.
 * **Visualization & Deployment:** Publication-ready static charts (`matplotlib`) and a live interactive geospatial web app (`streamlit`, `folium`, `streamlit-folium`, `plotly`).
+
+---
+
+## 📁 Repository Structure
+```text
+munich-bike-mobility/
+├── app.py                              # Interactive Streamlit geospatial dashboard (Plotly + Folium)
+├── data/
+│   └── munich_bike_cleaned_2022_2026.csv  # Cleaned master dataset (2022–2026 daily counts & weather)
+├── notebooks/
+│   ├── 01_data_cleaning.ipynb          # Sensor QA, outage flagging (135 days) & dataset merging
+│   └── 02_eda_visualizations.ipynb     # Commuter vs. leisure corridors & weather elasticity analysis
+├── images/
+│   ├── 01_commuter_vs_leisure.png      # Weekday vs. weekend station demand profile chart
+│   └── 02_weather_impact.png           # Precipitation impact & ridership drop chart
+├── requirements.txt                    # Python dependencies for local & Streamlit Cloud deployment
+└── README.md                           # Project overview, methodology & key findings
+```
+
 ---
 
 ## 🚀 How to Run Locally
@@ -47,14 +66,15 @@ git clone [https://github.com/LeaderTrusty/munich-bike-mobility.git](https://git
 cd munich-bike-mobility
 pip install -r requirements.txt
 streamlit run app.py
+```
 
-
+---
 
 ## 📂 Data Source
 
 Data provided by **Landeshauptstadt München** via [opendata.muenchen.de](https://opendata.muenchen.de/) under the *dl-by-de/2-0* license.
 
-```
+
 
 ---
 
