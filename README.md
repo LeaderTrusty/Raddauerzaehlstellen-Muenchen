@@ -46,11 +46,11 @@ Urban planners need reliable data to prioritize bike lane expansion, winter main
 ```text
 munich-bike-mobility/
 ├── app.py                              # Interactive Streamlit geospatial dashboard (Plotly + Folium)
-├── data/
-│   └── munich_bike_cleaned_2022_2026.csv  # Cleaned master dataset (2022–2026 daily counts & weather)
+├── .devcontainer/
+│   └── devcontainer.json                  # GitHub Codespaces / VS Code container setup
+├── munich_bike_cleaned_2022_2026.csv   # Cleaned master dataset (2022–2026 daily counts & weather)
 ├── notebooks/
-│   ├── 01_data_cleaning.ipynb          # Sensor QA, outage flagging (135 days) & dataset merging
-│   └── 02_eda_visualizations.ipynb     # Commuter vs. leisure corridors & weather elasticity analysis
+│   └── munich_bike_mobility.ipynb      # Sensor QA, outage flagging (135 days) & dataset merging. Commuter vs. leisure corridors & weather elasticity analysis
 ├── images/
 │   ├── 01_commuter_vs_leisure.png      # Weekday vs. weekend station demand profile chart
 │   └── 02_weather_impact.png           # Precipitation impact & ridership drop chart
